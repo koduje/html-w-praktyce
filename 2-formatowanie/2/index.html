@@ -1,0 +1,218 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta lang="pl" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <TITLE>
+      Web developers’ nightmare
+    </TITLE>
+    <style>
+      a,a:visited {
+        color: rgba(52, 179, 153, .9);
+      }
+      body {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #eef2f6;
+      }
+
+      .header {
+        width: 100%;
+        height: 150px;
+        flex-basis: 100%;
+        display: flex;
+        box-sizing: border-box;
+        background: rgba(52, 179, 153, .9);
+        margin-bottom: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.47);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .logo {
+        width: 300px;
+        height: 93px;
+        filter: invert(100%);
+      }
+
+      .header a, .header a:visited {
+        color: white;
+      }
+
+      .left-bar {
+        padding: 10px;
+        text-align: justify;
+        width: 25%;
+        flex-basis: 25%;
+        min-height: 600px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        background: #696e9e;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.47);
+      }
+
+      .left-bar > h2 {
+        color: white; 
+      }
+
+      h1, h2, h3, h4  {
+        text-align: left;
+        text-transform: uppercase;
+        color: #696e9e;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      .main {
+        padding: 10px;
+        width: calc(74% - 10px);
+        flex-basis: calc(74%-10px);
+        min-height: 600px;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.47);
+      }
+
+      .footer {
+        width: 100%;
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.47);
+      }
+
+      .author span {
+        margin-top: 10px;
+        color: silver;
+      }
+
+      .author span:first-child::before {
+        display: inline-block;
+        content: '~';
+      }   
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/">
+        <img class="logo" src="logo.png">
+      </a>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="">
+              Homepage
+            </a>
+          </li>
+          <li>
+            <a href="">
+              About 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Contact us 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="left-bar">
+      <h2>
+        Using web developer tools
+      </h2>
+      <div>
+        <p>
+          There are plenty of tools that can speed up and improve your coding.
+          Your IDE (Integrated Development Environment) is an extension of your hands. You can write your programs faster and make them more bulletproof thanks to them.
+        </p>
+        <p>
+          Building tools, such as gulp or grunt, are here to help you automate some of your work. Ever heard of file minification? You can use them to automatically build minified files that your website will be using, and have well formatted code in your own code repository. 
+          <span>
+            So much win! 
+          </span>
+        </p>
+      </div>
+      <div style="color: #696e9e">
+        HTML CSS JS COURSE 
+      </div>
+    </div>
+    <div class="main">
+      <h1>
+        Website development world
+      </h1>
+      <div>
+        <h1>
+          Semantic HTML
+        </h1>
+        <div> 
+          <p>
+            Is very important for both users and developers.          
+          </p>  
+          <a href="/article/1">
+            See why
+          </a>
+          <div class="author">
+            <span>
+              Jan
+            </span>
+            <span>
+              Kowalski
+            </span>
+          </div>
+        </div>
+        <hr>
+        <h1> 
+          Let’s add CSS to our website!
+        </h1>
+        <div> 
+          <p>
+            Unstyled HTML pages are quite boring. CSS is something that can make them more interesting.
+          </p>  
+          <a href="/article/2">
+            See how
+          </a>
+          <div class="author">
+            <span>
+              Andrzej
+            </span> 
+            <span>
+              Nowak
+            </span>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="nav">
+        <ul>
+          <a href="">
+            Homepage
+          </a>
+          <a href="">
+            About
+          </a>
+          <a href="">
+            Contact us 
+          </a> 
+        </ul>
+      </div>
+      <p>
+        Copyright © Kodu.je, Wojciech Połowniak
+      </p>
+    </div>
+  </body>
+</html>
